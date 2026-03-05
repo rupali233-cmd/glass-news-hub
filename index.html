@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glass News Hub</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+<h1>Glass News Hub</h1>
+
+<div class="search-box">
+<input type="text" id="searchInput" placeholder="Search news...">
+<button onclick="searchNews()">Search</button>
+</div>
+
+</header>
+
+
+<!-- CATEGORY BUTTONS -->
+
+<div class="categories">
+
+<button onclick="fetchNews('general')">General</button>
+<button onclick="fetchNews('technology')">Technology</button>
+<button onclick="fetchNews('sports')">Sports</button>
+<button onclick="fetchNews('business')">Business</button>
+<button onclick="fetchNews('health')">Health</button>
+<button onclick="fetchNews('science')">Science</button>
+<button onclick="fetchNews('entertainment')">Entertainment</button>
+
+</div>
+
+
+<!-- NEWS SECTION -->
+
+<section>
+
+<div id="news-container"></div>
+
+</section>
+<!-- CHATBOT BUTTON -->
+
+<div class="chatbot-btn" onclick="toggleChat()">
+💬
+</div>
+
+
+<!-- CHATBOT WINDOW -->
+
+<div class="chatbot-container" id="chatbot">
+
+<div class="chat-header">
+News Assistant
+<span onclick="toggleChat()">✖</span>
+</div>
+
+<div class="chat-body" id="chat-body"></div>
+
+<div class="chat-input">
+
+<input type="text" id="chat-input" placeholder="Ask something...">
+
+<button onclick="sendMessage()">Send</button>
+
+</div>
+
+</div>
+
+
+<!-- PROFILE SECTION -->
+
+<section class="profile">
+
+<h2>Rupali </h2>
+
+<p>Frontend Developer | Creator of Glass News Hub</p>
+
+<div class="social">
+
+<a href="#">GitHub</a>
+<a href="#">LinkedIn</a>
+
+</div>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
